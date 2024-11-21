@@ -68,7 +68,7 @@ header {
   bottom: 5px;
 }
 
-.button-github {
+.anchor-github {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,14 +77,124 @@ header {
   border: none;
   background-color: transparent;
   border-radius: 50%;
+  text-decoration: none;
 }
 
-.button-github:hover {
+.anchor-github:hover {
   background-color: rgb(4, 144, 187);
 }
 
 i {
   font-size: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.project-card {
+  width: 300px;
+  height: 400px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-image-container {
+  height: 60%;
+}
+
+.project-one .project-image-container {
+  background-image: url('./imgs/battleship.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-two .project-image-container {
+  background-image: url('./imgs/weatherapp.png');
+  background-size: auto;
+  background-position: center;
+}
+
+.project-three .project-image-container {
+  background-image: url('./imgs/todolist.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-four .project-image-container {
+  background-image: url('./imgs/calculator.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-five .project-image-container {
+  background-image: url('./imgs/etchasketch.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-six .project-image-container {
+  background-image: url('./imgs/tictactoe.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.anchor-project-new-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.anchor-project-new-window:hover {
+  background-color: rgb(4, 144, 187);
+}
+
+i.project {
+  font-size: 30px;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+}
+
+.project-info-text {
+  padding: 5px 15px;
+  font-size: 1.15rem;
+  color: rgb(77, 77, 77);
 }
 
 @media (max-width: 500px) {
@@ -114,5 +224,10 @@ i {
     align-items: center;
     gap: 15px;
     padding-bottom: 50px;
+  }
+
+  h1 {
+    justify-self: center;
+    align-self: center;
   }
 }
